@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { CivicProfile} from '@civic/profile'
 
 export default function Home() {
+
+  CivicProfile.get("4Gh3VaUQ5iR7YuqJFBzHZJ95owganwfBidDCNf9RE7cE")
+    .then(console.log)
+
   return (
+
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
